@@ -1,0 +1,113 @@
+/** Все стили для компонентов плеера */
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+/* stylelint-disable no-duplicate-selectors */
+/* stylelint-disable */
+/* stylelint-disable declaration-bang-space-before,no-duplicate-selectors,string-no-newline */
+/** Тултип отрисовывается вне .ssp-player */
+.ssp-player-form-item-hint .ant-tooltip-inner {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.ssp-player-form-item-hint .ssp-player-markdown-editor h1,
+.ssp-player-form-item-hint .ssp-player-markdown-editor h2,
+.ssp-player-form-item-hint .ssp-player-markdown-editor h3,
+.ssp-player-form-item-hint .ssp-player-markdown-editor h4,
+.ssp-player-form-item-hint .ssp-player-markdown-editor h5,
+.ssp-player-form-item-hint .ssp-player-markdown-editor h6 {
+  color: #fff;
+}
+.ssp-player-form-item-hint .ssp-player-markdown-editor th,
+.ssp-player-form-item-hint .ssp-player-markdown-editor td {
+  border: 1px solid #fff;
+}
+.ssp-player-form-item-hint .ssp-player-markdown-editor *:only-child {
+  margin: 0;
+}
+.ssp-player {
+  /* обновляем стили для ant form, в случае если layout у родительского Form отличается от layout конкретного виджета */
+}
+.ssp-player-markdown-editor th,
+.ssp-player-markdown-editor td {
+  border: 1px solid #000;
+  padding: 4px;
+}
+.ssp-player-alert {
+  margin-bottom: 16px;
+}
+.ssp-player-alert-links {
+  margin-top: 14px;
+}
+.ssp-player-alert-links a {
+  margin-bottom: 8px;
+}
+.ssp-player-alert-links a:not(:last-child) {
+  margin-right: 16px;
+}
+.ssp-player-alert-links_vertical a:not(:last-child) {
+  margin-right: 0;
+  margin-bottom: 8px;
+}
+.ssp-player-alert-links__label {
+  margin-right: 8px;
+}
+.ssp-player-alert .ssp-player-markdown-editor *:last-child {
+  margin: 0;
+}
+.ssp-player-date-range input {
+  min-width: 125px;
+}
+.ssp-player-text-field-with-title__text {
+  margin-bottom: 0;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+.ssp-player-text-block {
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  text-indent: 0;
+}
+.ssp-player-number-block .label-structure-currency {
+  white-space: nowrap !important;
+}
+.ssp-player-validation-error {
+  color: #ff4d4f;
+}
+.ssp-player-section-collapse {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+  border: 1px solid transparent;
+}
+.ssp-player-section-collapse__error {
+  border-color: #ff4d4f;
+}
+.ssp-player .ant-input-number {
+  width: 100% !important;
+}
+.ssp-player .ant-form-vertical .ant-form-item-control {
+  flex: 0;
+}
+.ssp-player .ant-form-horizontal .ant-form-item {
+  flex-direction: row;
+  /* добавляет отступ между инпутом и лэйблом в случае если лэйбл длинный и переноситься на новую строку */
+  grid-row-gap: 8px !important;
+}
+.ssp-player .ant-form-horizontal .ant-form-item label::after {
+  display: none;
+}
+.ssp-player .ant-form-horizontal .ant-form-item-label {
+  padding: 0;
+  margin-right: 8px;
+  white-space: initial;
+  text-align: left;
+}
+.ssp-player .ant-form-horizontal .ant-form-item-label > label {
+  min-height: 32px;
+  height: auto;
+}
+.ssp-player .ant-divider-inner-text {
+  white-space: initial;
+}
+
+
+/*# sourceMappingURL=index.css.map*/

@@ -1,0 +1,75 @@
+/** Все стили для компонентов плеера */
+@import '~antd/lib/style/themes/default.less';
+
+/** Тултип отрисовывается вне .ssp-player */
+@import "../app/Components/FormItemHint/index.less";
+
+.ssp-player {
+  @import "../app/Components/MardownReader/index.less";
+  @import "../app/Components/widget/AlertBlock/index.less";
+  @import "../app/Components/widget/DateRangeBlock/index.less";
+  @import "../app/Components/widget/TextFieldWithTitle/index.less";
+
+  &-text-block {
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    text-indent: 0;
+  }
+
+  &-number-block {
+    .label-structure-currency {
+      white-space: nowrap !important;
+    }
+  }
+
+  &-validation-error {
+    color: @red-5;
+  }
+
+  &-section-collapse {
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(@black, 0.12);
+    border: 1px solid transparent;
+
+    &__error {
+      border-color: @red-5;
+    }
+  }
+
+  .ant-input-number {
+    width: 100% !important;
+  }
+
+  /* обновляем стили для ant form, в случае если layout у родительского Form отличается от layout конкретного виджета */
+  .ant-form-vertical .ant-form-item-control {
+    flex: 0;
+  }
+
+  .ant-form-horizontal {
+    .ant-form-item {
+      flex-direction: row;
+      /* добавляет отступ между инпутом и лэйблом в случае если лэйбл длинный и переноситься на новую строку */
+      grid-row-gap: 8px !important;
+
+      label::after {
+        display: none;
+      }
+    }
+
+    .ant-form-item-label {
+      padding: 0;
+      margin-right: 8px;
+      white-space: initial;
+      text-align: left;
+
+      > label {
+        min-height: 32px;
+        height: auto;
+      }
+    }
+  }
+
+  .ant-divider-inner-text {
+    white-space: initial;
+  }
+}
